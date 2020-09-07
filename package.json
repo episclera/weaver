@@ -1,6 +1,6 @@
 {
-  "name": "multipack",
-  "description": "🔱 A monorepo template repository. Ideal for building shareable JavaScript packages or React modules.",
+  "name": "uikit",
+  "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.",
   "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
@@ -11,10 +11,10 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/multipack/",
+  "homepage": "https://episclera.github.io/uikit/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/multipack"
+    "url": "https://github.com/episclera/uikit"
   },
   "collective": {
     "type": "opencollective",
@@ -25,12 +25,10 @@
     "url": "https://opencollective.com/episclera"
   },
   "keywords": [
-    "lerna",
-    "monorepo",
-    "multipack"
+    "uikit"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/multipack/issues"
+    "url": "https://github.com/episclera/uikit/issues"
   },
   "scripts": {
     "build:packages": "lerna run build",

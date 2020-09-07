@@ -1,7 +1,7 @@
 {
-  "name": "@episclera/multipack-with-react",
-  "description": "An example of react multipack package",
-  "version": "5.0.2",
+  "name": "@episclera/uikit-utils",
+  "description": "A set of utils for uikit monorepo repository.",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,10 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/multipack/",
+  "homepage": "https://episclera.github.io/uikit/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/multipack"
+    "url": "https://github.com/episclera/uikit"
   },
   "collective": {
     "type": "opencollective",
@@ -27,10 +27,10 @@
   "keywords": [
     "lerna",
     "monorepo",
-    "multipack"
+    "uikit"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/multipack/issues"
+    "url": "https://github.com/episclera/uikit/issues"
   },
   "main": "./build/index.js",
   "types": "./types",
@@ -42,14 +42,7 @@
   "devDependencies": {
     "@episclera/toolkit-utils": "1.0.12",
     "@episclera/webpack-config": "1.0.2",
-    "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.0.2",
-    "@testing-library/react-hooks": "3.4.1",
-    "@types/react": "16.9.49",
     "cross-env": "7.0.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-test-renderer": "16.13.1",
     "rimraf": "3.0.2",
     "typescript": "4.0.2",
     "webpack": "4.44.1",
@@ -57,10 +50,6 @@
   },
   "dependencies": {
     "opencollective-postinstall": "2.0.3"
-  },
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }

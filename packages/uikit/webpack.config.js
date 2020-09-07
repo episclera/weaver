@@ -11,7 +11,7 @@ module.exports = mergeConfigs(
   uiPackageWebpackConfig,
   {
     output: {
-      library: 'multipackWithReact',
+      library: 'uikit',
     },
   },
 )

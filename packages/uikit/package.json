@@ -1,7 +1,7 @@
 {
-  "name": "@episclera/multipack-core",
-  "description": "🔱 A monorepo template repository. Ideal for building shareable JavaScript packages or React modules.",
-  "version": "5.0.2",
+  "name": "@episclera/uikit",
+  "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,10 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/multipack/",
+  "homepage": "https://episclera.github.io/uikit/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/multipack"
+    "url": "https://github.com/episclera/uikit"
   },
   "collective": {
     "type": "opencollective",
@@ -25,12 +25,10 @@
     "url": "https://opencollective.com/episclera"
   },
   "keywords": [
-    "lerna",
-    "monorepo",
-    "multipack"
+    "uikit"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/multipack/issues"
+    "url": "https://github.com/episclera/uikit/issues"
   },
   "main": "./build/index.js",
   "types": "./types",
@@ -52,8 +50,7 @@
     "webpack-cli": "3.3.12"
   },
   "dependencies": {
-    "@episclera/multipack-utils": "^5.0.2",
-    "@episclera/multipack-with-react": "^5.0.2",
+    "@episclera/uikit-utils": "^1.0.0",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {
