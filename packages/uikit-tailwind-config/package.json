@@ -1,7 +1,7 @@
 {
-  "name": "@episclera/uikit",
-  "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.",
-  "version": "1.0.1",
+  "name": "@episclera/uikit-tailwind-config",
+  "description": "A shareable tailwind config.",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,10 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/uikit/",
+  "homepage": "https://episclera.github.io/toolkit/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/uikit"
+    "url": "https://github.com/episclera/toolkit"
   },
   "collective": {
     "type": "opencollective",
@@ -25,10 +25,11 @@
     "url": "https://opencollective.com/episclera"
   },
   "keywords": [
-    "uikit"
+    "toolkit",
+    "tailwind"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/uikit/issues"
+    "url": "https://github.com/episclera/toolkit/issues"
   },
   "main": "./build/index.js",
   "types": "./types",
@@ -40,23 +41,15 @@
   "devDependencies": {
     "@episclera/toolkit-utils": "1.0.12",
     "@episclera/webpack-config": "1.0.2",
-    "@types/react": "16.9.49",
     "cross-env": "7.0.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
     "rimraf": "3.0.2",
+    "ts-loader": "8.0.3",
     "typescript": "4.0.2",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12"
   },
   "dependencies": {
-    "@episclera/uikit-utils": "^1.0.1",
-    "@episclera/uikit-tailwind-config": "^1.0.0",
     "opencollective-postinstall": "2.0.3"
-  },
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }

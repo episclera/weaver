@@ -3,10 +3,8 @@
   <img style="max-width:100%;" height="200"
     src="https://raw.githubusercontent.com/episclera/uikit/master/logo.png">
   </a>
-  <h1>
-      uikit
-  </h1>
-  <p> 🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components. </p>
+  <h1>@episclera/uikit-tailwind-config</h1>
+  <p>A shareable tailwind config. Part of <a href="https://github.com/episclera/uikit">uikit</a> monorepo</p>
   <p>
     <a href="https://episclera.github.io/uikit/">Site</a>
     | <a href="https://episclera.github.io/uikit/docs/doc-introduction">Getting Started</a>
@@ -20,27 +18,12 @@
 
 ## Usage
 
-Install: `npm i @episclera/uikit`
+Install: `npm i -D @episclera/uikit-tailwind-config`
 
-- First of all in your `tailwind.config.js` file you need to export `uikitTailwindConfig` because all components are dependent from tailwind helper-classes.
+And in your `tailwind.config.js` file just put this content.
 
 ```js
-const { uikitTailwindConfig } = require('@episclera/uikit')
-
-module.exports = uikitTailwindConfig
-// If you need to rewrite/customize some values you can use `mergeConfigs` util from `@episclera/toolkit`.
-const { uikitTailwindConfig } = require('@episclera/uikit')
-const { mergeConfigs } = require('@episclera/toolkit')
-
-module.exports = mergeConfigs(uikitTailwindConfig, {
-  theme: {
-    extend: {
-      colors: {
-        'primary-color': '#6398de',
-      },
-    },
-  },
-})
+module.exports = require('@episclera/uikit-tailwind-config')
 ```
 
 ## Contributing
@@ -60,4 +43,4 @@ module.exports = mergeConfigs(uikitTailwindConfig, {
 **[@episclera/uikit](https://github.com/episclera/uikit)** © [Episclera](https://github.com/episclera), Released under the [MIT](https://github.com/episclera/uikit/blob/master/LICENSE) License.<br>
 Authored and maintained by Episclera with help from contributors ([list](https://github.com/episclera/uikit/contributors)).
 
-#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/episclera/uikit)
+#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/episclera/uikit).
