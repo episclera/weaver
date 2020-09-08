@@ -47,7 +47,7 @@ module.exports = mergeConfigs(uikitTailwindConfig, {
 })
 ```
 
-NOTE: `tailwindConfig` are available to be use also from [@episclera/toolkit](https://github.com/episclera/toolkit) `const { tailwindConfig } = require('@episclera/toolkit')`
+NOTE: `tailwindConfig` are available to be used also from [@episclera/toolkit](https://github.com/episclera/toolkit) `const { tailwindConfig } = require('@episclera/toolkit')`
 and is also mirrored in [@episclera/tailwind-config](https://github.com/episclera/toolkit/tree/master/packages/tailwind-config) just FYI.
 
 ## Contributing
