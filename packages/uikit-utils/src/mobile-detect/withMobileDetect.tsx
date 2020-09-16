@@ -1,23 +1,25 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import MobileDetect from 'mobile-detect'
+import { DeviceContext, TWithMobileDetect } from '../../types'
 
-const withMobileDetect = Component => {
-  const WrappedComponent: React.FC = props => <Component {...props} />
+const withMobileDetect: TWithMobileDetect = Component => {
+  const WrappedComponent: any = (props: any) => <Component {...props} />
 
   WrappedComponent.displayName = `withMobileDetect(${
     Component.displayName || Component.name || 'Component'
   })`
 
-  WrappedComponent.getInitialProps = async rawContext => {
+  WrappedComponent.getInitialProps = async (rawContext: any) => {
     const { req } = rawContext.ctx || rawContext
 
     const md = new MobileDetect(
       req ? req.headers['user-agent'] : window.navigator.userAgent,
     )
 
-    const deviceContext = {
-      isMobile: md.phone(),
-      isTablet: md.tablet(),
+    const deviceContext: DeviceContext = {
+      isMobile: !!md.phone(),
+      isTablet: !!md.tablet(),
       isDesktop: !md.phone() && !md.tablet(),
     }
 
