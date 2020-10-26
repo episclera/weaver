@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@episclera/toolkit-utils": "1.0.13",
-    "@episclera/webpack-config": "1.0.2",
+    "@episclera/webpack-config": "1.0.3",
     "cross-env": "7.0.2",
     "rimraf": "3.0.2",
     "ts-loader": "8.0.7",
