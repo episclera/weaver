@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies, no-use-before-define, react/jsx-props-no-spreading */
 import React from 'react'
 import { render } from '@testing-library/react'
-import '@testing-library/jest-dom'
 import themeConfig from '@episclera/uikit-tailwind-config'
 import DeviceDetectProvider from '../DeviceDetectProvider'
 import useScreenSize from '../useScreenSize'
