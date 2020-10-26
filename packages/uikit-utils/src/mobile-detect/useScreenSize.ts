@@ -19,6 +19,7 @@ const useScreenSize: TUseScreenSize = () => {
     [],
   )
 
+  /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
   const guessedSizeFromDeviceContext = useMemo(() => {
     if (isMobile) return themeScreenSizes.xs - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
     if (isTablet) return themeScreenSizes.md
@@ -26,6 +27,7 @@ const useScreenSize: TUseScreenSize = () => {
     return themeScreenSizes.lg
   }, [isMobile, isTablet])
 
+  /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
   const getScreenSize = useCallback(
     () => (isBrowser ? window.innerWidth : guessedSizeFromDeviceContext),
     [guessedSizeFromDeviceContext],
