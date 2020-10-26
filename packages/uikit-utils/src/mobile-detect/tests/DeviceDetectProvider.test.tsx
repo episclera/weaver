@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies, no-use-before-define, react/jsx-props-no-spreading */
 import React from 'react'
-import { render } from '@testing-library/react'
+import { act, render } from '@testing-library/react'
 import themeConfig from '@episclera/uikit-tailwind-config'
 import DeviceDetectProvider from '../DeviceDetectProvider'
 import useScreenSize from '../useScreenSize'
@@ -16,14 +16,10 @@ beforeEach(() => {
       isDesktop: false,
     },
   }
-  // set size to mobile one
-  global.innerWidth =
-    Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')) - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
-  global.dispatchEvent(new Event('resize'))
 })
 
 describe('DeviceDetectProvider', () => {
-  it('should provide device context and set isXsScreenSize to true', () => {
+  it('should provide device context and re-provide this context with new values when window is resized', () => {
     let isGuessedScreenSizeXs = false
     const Component: React.FC<{}> = () => {
       const { isXsScreenSize } = useScreenSize()
@@ -38,6 +34,15 @@ describe('DeviceDetectProvider', () => {
         <Component />
       </DeviceDetectProvider>,
     )
+
+    expect(isGuessedScreenSizeXs).toBeFalsy()
+
+    act(() => {
+      // set size to extra small mobile one
+      global.innerWidth =
+        Number(`${themeConfig.theme.screens.xs.max}`.replace(/\D/g, '')) - 1 // decrease 1 unit because "isXsScreenSize" is calculated bellow using "<" symbol but not "<="
+      global.dispatchEvent(new Event('resize'))
+    })
 
     expect(isGuessedScreenSizeXs).toBeTruthy()
   })
