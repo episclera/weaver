@@ -53,7 +53,7 @@
     "@episclera/uikit-utils": "^1.0.4",
     "antd": "4.8.6",
     "opencollective-postinstall": "2.0.3",
-    "tailwindcss": "1.9.6"
+    "tailwindcss": "2.0.1"
   },
   "peerDependencies": {
     "react": ">=16.13.1",
