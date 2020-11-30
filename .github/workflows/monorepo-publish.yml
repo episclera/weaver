@@ -1,0 +1,51 @@
+name: Publish
+
+on:
+  push:
+    branches: [$default-branch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Setup git user
+        run: |
+          git config --global user.email "actions@gihub.com"
+          git config --global user.name "gh-actions"
+      - name: Install dependencies and build packages
+        run: |
+          npm install
+          npm run link:packages
+          npm run build:packages
+      - name: Bump package versions and Create release tags
+        run: |
+          yes | npm run version:packages
+      - name: Prepare .npmrc file to publish packages to NPM registry
+        uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://registry.npmjs.org'
+      - name: Publish to NPM
+        run: |
+          yes | npm run publish:packages:npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Prepare .npmrc file to publish packages to GitHub registry
+        uses: actions/setup-node@v1
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@episclera'
+      - name: Publish to GitHub
+        run: |
+          yes | npm run publish:packages:github
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
