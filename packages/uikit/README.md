@@ -31,8 +31,8 @@ const { uikitTailwindConfig } = require('@episclera/uikit')
 module.exports = uikitTailwindConfig
 ```
 
-NOTE: `tailwindConfig` are available to be used also from [@episclera/toolkit](https://github.com/episclera/toolkit) `const { tailwindConfig } = require('@episclera/toolkit')`
-and is also mirrored in [@episclera/tailwind-config](https://github.com/episclera/toolkit/tree/master/packages/tailwind-config) just FYI.
+NOTE: `tailwindConfig` are available to be used also from [@episclera/configkit](https://github.com/episclera/configkit) `const { tailwindConfig } = require('@episclera/configkit')`
+and is also mirrored in [@episclera/tailwind-config](https://github.com/episclera/configkit/tree/master/packages/tailwind-config) just FYI.
 
 2. Then in your main layout file you need to import preconfigured style files
 
