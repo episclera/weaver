@@ -4,4 +4,4 @@ title: API Introduction
 sidebar_label: API Introduction
 ---
 
-The Multipack API surface is tiny. Multipack defines a set of cli commands that is useful and easy to use in creation and mentenation of a monorepo package.
+🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.

@@ -47,7 +47,7 @@ function Home() {
             </div>
           </section>
         )}
-        {users && users.length && (
+        {users && users.length > 0 && (
           <section className={styles.users}>
             <div className="container">
               <div className="row">

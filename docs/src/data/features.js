@@ -1,15 +1,15 @@
 const features = [
   {
-    title: "Preconfigured Code Linters",
-    description:"ESLint and Prettier to enforce code style.",
+    title: "Episclera defaults",
+    description:"Preconfigured to use Episclera components style defaults.",
   },
   {
-    title: "Continuous Integration",
-    description:"Preconfigured Github workflow actions to run tests after each pushed commit.",
+    title: "Same components API as in ant-design",
+    description:"Same components API as in ant-design.",
   },
   {
-    title: "Test Development Driven",
-    description:"Preconfigured Jest and react-testing-library to test (ts|tsx) files and colect coverage from all packages.",
+    title: "Responsive utils",
+    description:"Provide a set of utils for Next.js to integrate SSR/CR responsive rendring.",
   },
 ];
 
