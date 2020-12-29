@@ -21,12 +21,24 @@ beforeEach(() => {
 describe('useScreenSize', () => {
   it('should re-calculate screen size on every window resize and return correct guessed screen size', () => {
     let guessedScreenSizes = {
+      isXsAndLessScreenSize: false,
       isXsScreenSize: false,
+      isXsAndGreaterScreenSize: false,
+      isSmAndLessScreenSize: false,
       isSmScreenSize: false,
+      isSmAndGreaterScreenSize: false,
+      isMdAndLessScreenSize: false,
       isMdScreenSize: false,
+      isMdAndGreaterScreenSize: false,
+      isLgAndLessScreenSize: false,
       isLgScreenSize: false,
+      isLgAndGreaterScreenSize: false,
+      isXlAndLessScreenSize: false,
       isXlScreenSize: false,
+      isXlAndGreaterScreenSize: false,
+      isXxlAndLessScreenSize: false,
       isXxlScreenSize: false,
+      isXxlAndGreaterScreenSize: false,
     }
     const Component: React.FC<{}> = () => {
       const screenSizeContext = useScreenSize()
@@ -49,7 +61,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isXsAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isXsScreenSize).toBeTruthy()
+    // test greater screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
 
     act(() => {
       // set size to small mobile one
@@ -59,7 +81,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isSmAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isSmScreenSize).toBeTruthy()
+    // test greater screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndGreaterScreenSize).toBeTruthy()
 
     act(() => {
       // set size to medium one
@@ -69,7 +101,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isMdAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isMdScreenSize).toBeTruthy()
+    // test greater screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndGreaterScreenSize).toBeTruthy()
 
     act(() => {
       // set size to large one
@@ -79,7 +121,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndGreaterScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isLgScreenSize).toBeTruthy()
+    // descenders
+    expect(guessedScreenSizes.isLgAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
 
     act(() => {
       // set size to extra large one
@@ -89,7 +141,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isXlAndLessScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isXlScreenSize).toBeTruthy()
+    // test greater screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndGreaterScreenSize).toBeTruthy()
 
     act(() => {
       // set size to 2x extra large one
@@ -99,7 +161,17 @@ describe('useScreenSize', () => {
       global.dispatchEvent(new Event('resize'))
     })
 
+    // test less or equal screen sizes
+    expect(guessedScreenSizes.isXxlAndLessScreenSize).toBeTruthy()
+    // test equal screen sizes
     expect(guessedScreenSizes.isXxlScreenSize).toBeTruthy()
+    // test greater screen sizes
+    expect(guessedScreenSizes.isXsAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isSmAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isMdAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isLgAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXlAndGreaterScreenSize).toBeTruthy()
+    expect(guessedScreenSizes.isXxlAndGreaterScreenSize).toBeTruthy()
   })
 
   it('should set correct initial screen size', () => {

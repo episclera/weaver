@@ -46,18 +46,35 @@ const useScreenSize: TUseScreenSize = () => {
     }
   }, [])
 
-  return {
-    isXsScreenSize: screenSize < themeScreenSizes.xs,
-    isSmScreenSize:
-      screenSize >= themeScreenSizes.sm && screenSize < themeScreenSizes.md,
-    isMdScreenSize:
-      screenSize >= themeScreenSizes.md && screenSize < themeScreenSizes.lg,
-    isLgScreenSize:
-      screenSize >= themeScreenSizes.lg && screenSize < themeScreenSizes.xl,
-    isXlScreenSize:
-      screenSize >= themeScreenSizes.xl && screenSize < themeScreenSizes.xxl,
-    isXxlScreenSize: screenSize >= themeScreenSizes.xxl,
-  }
+  const boolRepresentationsOfScreenSizes = useMemo(
+    () => ({
+      isXsAndLessScreenSize: screenSize < themeScreenSizes.xs,
+      isXsScreenSize: screenSize < themeScreenSizes.xs,
+      isXsAndGreaterScreenSize: screenSize >= 0,
+      isSmAndLessScreenSize: screenSize < themeScreenSizes.md,
+      isSmScreenSize:
+        screenSize >= themeScreenSizes.sm && screenSize < themeScreenSizes.md,
+      isSmAndGreaterScreenSize: screenSize >= themeScreenSizes.sm,
+      isMdAndLessScreenSize: screenSize < themeScreenSizes.lg,
+      isMdScreenSize:
+        screenSize >= themeScreenSizes.md && screenSize < themeScreenSizes.lg,
+      isMdAndGreaterScreenSize: screenSize >= themeScreenSizes.md,
+      isLgAndLessScreenSize: screenSize < themeScreenSizes.xl,
+      isLgScreenSize:
+        screenSize >= themeScreenSizes.lg && screenSize < themeScreenSizes.xl,
+      isLgAndGreaterScreenSize: screenSize >= themeScreenSizes.lg,
+      isXlAndLessScreenSize: screenSize < themeScreenSizes.xxl,
+      isXlScreenSize:
+        screenSize >= themeScreenSizes.xl && screenSize < themeScreenSizes.xxl,
+      isXlAndGreaterScreenSize: screenSize >= themeScreenSizes.xl,
+      isXxlAndLessScreenSize: screenSize < Number.MAX_SAFE_INTEGER,
+      isXxlScreenSize: screenSize >= themeScreenSizes.xxl,
+      isXxlAndGreaterScreenSize: screenSize >= themeScreenSizes.xxl,
+    }),
+    [screenSize, themeScreenSizes],
+  )
+
+  return boolRepresentationsOfScreenSizes
 }
 
 export default useScreenSize

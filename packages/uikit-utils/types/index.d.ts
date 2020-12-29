@@ -13,12 +13,24 @@ export interface DeviceDetectProviderProps {
 }
 
 export interface UseScreenSize {
+  isXsAndLessScreenSize: boolean
   isXsScreenSize: boolean
+  isXsAndGreaterScreenSize: boolean
+  isSmAndLessScreenSize: boolean
   isSmScreenSize: boolean
+  isSmAndGreaterScreenSize: boolean
+  isMdAndLessScreenSize: boolean
   isMdScreenSize: boolean
+  isMdAndGreaterScreenSize: boolean
+  isLgAndLessScreenSize: boolean
   isLgScreenSize: boolean
+  isLgAndGreaterScreenSize: boolean
+  isXlAndLessScreenSize: boolean
   isXlScreenSize: boolean
+  isXlAndGreaterScreenSize: boolean
+  isXxlAndLessScreenSize: boolean
   isXxlScreenSize: boolean
+  isXxlAndGreaterScreenSize: boolean
 }
 
 export type TUseScreenSize = () => UseScreenSize
