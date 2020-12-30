@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies, no-use-before-define, react/jsx-props-no-spreading */
+/* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/ban-types */
 import React from 'react'
 import { act, render } from '@testing-library/react'
 import themeConfig from '@episclera/uikit-tailwind-config'
