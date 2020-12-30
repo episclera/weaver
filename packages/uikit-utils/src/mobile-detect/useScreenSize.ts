@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { useEffect, useState, useCallback, useContext, useMemo } from 'react'
 import themeConfig from '@episclera/uikit-tailwind-config'
 import isBrowser from '../isBrowser'
@@ -25,7 +26,7 @@ const useScreenSize: TUseScreenSize = () => {
     if (isTablet) return themeScreenSizes.md
 
     return themeScreenSizes.lg
-  }, [isMobile, isTablet])
+  }, [isMobile, isTablet, themeScreenSizes])
 
   /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
   const getScreenSize = useCallback(
@@ -44,6 +45,7 @@ const useScreenSize: TUseScreenSize = () => {
     return () => {
       window.removeEventListener('resize', handleResize)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const boolRepresentationsOfScreenSizes = useMemo(

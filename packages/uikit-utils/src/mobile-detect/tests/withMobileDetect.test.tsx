@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies, no-use-before-define */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-floating-promises, @typescript-eslint/ban-ts-comment */
 import React from 'react'
 import { NextComponent } from '../../../types'
 import withMobileDetect from '../withMobileDetect'
