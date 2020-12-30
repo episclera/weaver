@@ -1,7 +1,7 @@
 {
   "name": "@episclera/uikit",
   "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -49,8 +49,8 @@
     "webpack-cli": "4.3.0"
   },
   "dependencies": {
-    "@episclera/uikit-tailwind-config": "^1.0.12",
-    "@episclera/uikit-utils": "^1.0.11",
+    "@episclera/uikit-tailwind-config": "^1.0.13",
+    "@episclera/uikit-utils": "^1.0.12",
     "antd": "4.9.4",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.2"
