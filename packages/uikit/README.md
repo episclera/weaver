@@ -6,7 +6,7 @@
   <h1>
       uikit
   </h1>
-  <p> 🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components. </p>
+  <p> 🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components and TailwindCSS. </p>
   <p>
     <a href="https://episclera.github.io/uikit/">Site</a>
     | <a href="https://episclera.github.io/uikit/docs/doc-introduction">Getting Started</a>
@@ -22,23 +22,33 @@
 
 Install: `npm i @episclera/uikit`
 
-1. First of all in your `tailwind.config.js` file you need to export `uikitTailwindConfig` because all components are dependent from tailwind helper-classes.
+1. Then in your main layout file (\_app.tsx) you need to import preconfigured style files
+
+**NOTE**: TailwindCSS utils are also included in this file so no need to import something else.
 
 ```js
-const { uikitTailwindConfig } = require('@episclera/uikit')
-// OR install and import just what you need separately: const uikitTailwindConfig = require('@episclera/uikit-tailwind-config')
-
-module.exports = uikitTailwindConfig
+import '@episclera/uikit/styles/main.less'
 ```
 
-NOTE: `tailwindConfig` are available to be used also from [@episclera/configkit](https://github.com/episclera/configkit) `const { tailwindConfig } = require('@episclera/configkit')`
-and is also mirrored in [@episclera/tailwind-config](https://github.com/episclera/configkit/tree/master/packages/tailwind-config) just FYI.
+2. Then in your main layout file (\_app.tsx) you need to wrapp the entire app in (COnfigProvider and DeviceDetectProvider)
 
-2. Then in your main layout file you need to import preconfigured style files
+```jsx
+import { withMobileDetect, DeviceDetectProvider } from '@episclera/uikit'
 
-```js
-import '@episclera/uikit/styles/tailwind.css'
-import '@episclera/uikit/styles/antd.less'
+const App = ({ Component, pageProps, deviceContext }) => (
+  <ConfigProvider>
+    <DeviceDetectProvider deviceContext={deviceContext}>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </DeviceDetectProvider>
+  </ConfigProvider>
+)
+
+App.getInitialProps = async appContext =>
+  await NextApp.getInitialProps(appContext)
+
+export default withMobileDetect(App)
 ```
 
 ## Contributing

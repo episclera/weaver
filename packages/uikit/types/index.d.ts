@@ -66,7 +66,6 @@ import {
   Upload as AntdUpload,
   version as AntdVersion,
 } from 'antd'
-import { UikitTailwindConfig } from '@episclera/uikit-tailwind-config'
 import {
   DeviceDetectProviderProps,
   DeviceContext,
@@ -144,8 +143,6 @@ export interface Components {
 }
 
 export interface Uikit extends Components {
-  // tailwind
-  uikitTailwindConfig: UikitTailwindConfig
   // mobile detect
   DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
   DeviceDetectContext: React.Context<DeviceContext>
@@ -222,8 +219,6 @@ export const Tooltip: typeof AntdTooltip
 export const Typography: typeof AntdTypography
 export const Upload: typeof AntdUpload
 export const version: typeof AntdVersion
-// tailwind
-export const uikitTailwindConfig: UikitTailwindConfig
 // mobile detect
 export const DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
 export const DeviceDetectContext: React.Context<DeviceContext>
