@@ -66,6 +66,7 @@ import {
   Upload,
   version,
 } from 'antd'
+import uikitTailwindConfig from '@episclera/uikit-tailwind-config'
 import {
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -142,6 +143,8 @@ const uikit: Uikit = {
   Typography,
   Upload,
   version,
+  // tailwind
+  uikitTailwindConfig,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -218,6 +221,8 @@ export {
   Typography,
   Upload,
   version,
+  // tailwind
+  uikitTailwindConfig,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
