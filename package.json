@@ -26,7 +26,7 @@
     "build:packages": "lerna run build",
     "watch:packages": "lerna run watch --stream --parallel",
     "start:packages": "lerna run start --stream --parallel",
-    "watch:docs": "lerna run watch --stream --scope=docs",
+    "watch:docs": "cd docs && npm run watch",
     "publish:docs": "cd docs && npm run publish",
     "link:packages": "lerna bootstrap",
     "version:packages": "lerna version --yes --message=\"chore: publish changed packages\"",

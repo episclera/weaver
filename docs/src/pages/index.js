@@ -10,6 +10,7 @@ import Funding from '../components/Funding'
 import features from '../data/features'
 import users from '../data/users'
 import fundings from '../data/fundings'
+import { Button } from '@episclera/uikit'
 
 function Home() {
   const context = useDocusaurusContext();
@@ -33,6 +34,7 @@ function Home() {
           </div>
         </div>
       </header>
+      <Button type='dashed'>aaaaaaaaaaaaa</Button>
       <main>
         {features && features.length && (
           <section >
