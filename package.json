@@ -1,6 +1,6 @@
 {
   "name": "uikit",
-  "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components.",
+  "description": "🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components and TailwindCSS.",
   "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
