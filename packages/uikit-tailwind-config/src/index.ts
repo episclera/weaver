@@ -1,6 +1,3 @@
-// TODO: find a way to import vars less file here and use variables from there
-// TODO: remove unused properties
-
 /* istanbul ignore file */
 import { UikitTailwindConfig } from '../types'
 
@@ -52,9 +49,8 @@ const uikitTailwindConfig: UikitTailwindConfig = {
   theme: {
     colors: {
       // Replacing default (BIG TW) color palette, cause' of big bundle size
-      // brand colors property names (+ TW prefixes) (should be same as in ant-design)
-      'primary-color': '#6398de', // primary color for all components
-      'link-color': '#1890ff', // link color
+      // NOTE: brand colors should be same as in ant-design
+      'primary-color': '#1890ff', // primary color for all components
       'success-color': '#52c41a', // success state color
       'warning-color': '#faad14', // warning state color
       'error-color': '#f5222d', // error state color
@@ -93,7 +89,7 @@ const uikitTailwindConfig: UikitTailwindConfig = {
       center: true, // To center containers
     },
     screens: {
-      // breakpoints (should be same as in ant design grid system)
+      // NOTE: breakpoints should be same as in ant-design
       xs: { max: '576px' }, // < 576
       sm: '576px', // >= 576
       md: '768px', // >=768
