@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@episclera/configkit-utils": "1.0.44",
-    "@episclera/webpack-config": "1.0.31",
+    "@episclera/webpack-config": "1.0.34",
     "@types/react": "17.0.0",
     "clean-css-cli": "4.3.0",
     "cross-env": "7.0.3",
