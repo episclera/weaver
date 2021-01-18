@@ -1,7 +1,7 @@
 {
   "name": "@episclera/uikit-tailwind-config",
   "description": "A shareable tailwind config.",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
