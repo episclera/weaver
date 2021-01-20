@@ -24,7 +24,7 @@ jobs:
           git config --global user.name "gh-actions"
       - name: Install dependencies and build packages
         run: |
-          npm install
+          npm ci
           npm run link:packages
           npm run build:packages
       - name: Bump package versions and Create release tags
