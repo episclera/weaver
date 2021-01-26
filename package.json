@@ -29,7 +29,7 @@
     "watch:docs": "cd docs && npm run watch",
     "publish:docs": "cd docs && npm run publish",
     "link:packages": "lerna bootstrap",
-    "version:packages": "lerna version --yes --message=\"chore: publish changed packages\"",
+    "version:packages": "lerna version --conventional-commits --yes --message=\"chore: publish changed packages\"",
     "publish:packages:npm": "lerna publish from-package --yes --registry=https://registry.npmjs.org",
     "publish:packages:github": "lerna publish from-package --yes --registry=https://npm.pkg.github.com",
     "test:packages": "jest --coverage",
