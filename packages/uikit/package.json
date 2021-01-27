@@ -1,7 +1,7 @@
 {
   "name": "@episclera/uikit",
   "description": "🐜 UI library based on Ant-Design and TailwindCSS.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -52,8 +52,8 @@
     "webpack-cli": "4.4.0"
   },
   "dependencies": {
-    "@episclera/uikit-tailwind-config": "^1.1.1",
-    "@episclera/uikit-utils": "^1.1.1",
+    "@episclera/uikit-tailwind-config": "^1.1.2",
+    "@episclera/uikit-utils": "^1.1.2",
     "antd": "4.11.2",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.2"
