@@ -6,7 +6,7 @@
   <h1>
       uikit
   </h1>
-  <p> 🐜UI library meant to provide a way to share common UI components through all Episclera projects. Uses under the hood Ant-Design components and TailwindCSS. </p>
+  <p> 🐜 UI library based on Ant-Design and TailwindCSS. </p>
   <p>
     <a href="https://episclera.github.io/uikit/">Site</a>
     | <a href="https://episclera.github.io/uikit/docs/doc-introduction">Getting Started</a>
