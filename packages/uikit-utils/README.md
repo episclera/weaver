@@ -20,20 +20,13 @@
 
 - Install: `npm i @episclera/uikit-utils`
 
+#### isBrowser
+Returns `true` if runing environement is a browser or `false` if not.
+
 ```js
-import { toNumber } from '@episclera/uikit-utils'
+import { isBrowser } from '@episclera/uikit-utils'
 
-console.log(toNumber('21'))
-```
-
-Or use via cdn:
-
-```html
-<!--index.html-->
-<script src="https://cdn.jsdelivr.net/npm/@episclera/uikit-utils@latest/build/index.js"></script>
-<script>
-  console.log(uikitUtils.toNumber('21'))
-</script>
+console.log(isBrowser())
 ```
 
 ## Contributing
