@@ -54,7 +54,7 @@
   "dependencies": {
     "@episclera/uikit-tailwind-config": "^1.1.2",
     "@episclera/uikit-utils": "^1.1.2",
-    "antd": "4.12.1",
+    "antd": "4.12.2",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.2"
   },
