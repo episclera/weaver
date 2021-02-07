@@ -23,7 +23,7 @@
     "url": "https://github.com/episclera/uikit/issues"
   },
   "scripts": {
-    "build:packages": "lerna run build",
+    "build:packages": "lerna run build --stream",
     "watch:packages": "lerna run watch --stream --parallel",
     "start:packages": "lerna run start --stream --parallel",
     "watch:docs": "cd docs && npm run watch",
