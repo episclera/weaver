@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@episclera/uikit-tailwind-config": "^1.2.0",
-    "mobile-detect": "1.4.4",
+    "mobile-detect": "1.4.5",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {
