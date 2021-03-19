@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://episclera.github.io/weaver/">
   <img style="max-width:100%;" height="200"
-    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.svg">
+    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.png">
   </a>
   <h1>
       weaver

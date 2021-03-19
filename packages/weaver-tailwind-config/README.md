@@ -1,12 +1,10 @@
 <div align="center">
   <a href="https://episclera.github.io/weaver/">
   <img style="max-width:100%;" height="200"
-    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.svg">
+    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.png">
   </a>
-  <h1>
-      weaver
-  </h1>
-  <p> 🐜 Enjoyable UI library. </p>
+  <h1>@episclera/weaver-tailwind-config</h1>
+  <p>A shareable tailwind config. Part of <a href="https://github.com/episclera/weaver">weaver</a> monorepo</p>
   <p>
     <a href="https://episclera.github.io/weaver/">Site</a>
     | <a href="https://episclera.github.io/weaver/docs/doc-introduction">Getting Started</a>
@@ -20,35 +18,12 @@
 
 ## Usage
 
-Install: `npm i @episclera/weaver`
+Install: `npm i -D @episclera/weaver-tailwind-config`
 
-1. Then in your main layout file (\_app.tsx) you need to import preconfigured style files
-
-**NOTE**: TailwindCSS utils are also included in this file so no need to import something else.
+And in your `tailwind.config.js` file just put this content.
 
 ```js
-import '@episclera/weaver/styles/main.less'
-```
-
-2. Then in your main layout file (\_app.tsx) you need to wrapp the entire app in (COnfigProvider and DeviceDetectProvider)
-
-```jsx
-import { withMobileDetect, DeviceDetectProvider } from '@episclera/weaver'
-
-const App = ({ Component, pageProps, deviceContext }) => (
-  <ConfigProvider>
-    <DeviceDetectProvider deviceContext={deviceContext}>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    </DeviceDetectProvider>
-  </ConfigProvider>
-)
-
-App.getInitialProps = async appContext =>
-  await NextApp.getInitialProps(appContext)
-
-export default withMobileDetect(App)
+module.exports = require('@episclera/weaver-tailwind-config')
 ```
 
 ## Contributing
@@ -68,4 +43,4 @@ export default withMobileDetect(App)
 **[@episclera/weaver](https://github.com/episclera/weaver)** © [Episclera](https://github.com/episclera), Released under the [MIT](https://github.com/episclera/weaver/blob/master/LICENSE) License.<br>
 Authored and maintained by Episclera with help from contributors ([list](https://github.com/episclera/weaver/contributors)).
 
-#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/episclera/weaver)
+#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/episclera/weaver).

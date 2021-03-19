@@ -1,12 +1,10 @@
 <div align="center">
   <a href="https://episclera.github.io/weaver/">
   <img style="max-width:100%;" height="200"
-    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.svg">
+    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.png">
   </a>
-  <h1>
-      weaver
-  </h1>
-  <p> 🐜 Enjoyable UI library. </p>
+  <h1>@episclera/weaver-utils</h1>
+  <p>A set of utils for @episclera/weaver package. Part of <a href="https://github.com/episclera/weaver">weaver</a> monorepo</p>
   <p>
     <a href="https://episclera.github.io/weaver/">Site</a>
     | <a href="https://episclera.github.io/weaver/docs/doc-introduction">Getting Started</a>
@@ -18,37 +16,17 @@
 [![GitHub](https://img.shields.io/github/license/episclera/weaver)](https://github.com/episclera/weaver/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-episclera%2Fmultipack-green)](https://github.com/episclera/multipack)
 
-## Usage
+## Getting started
 
-Install: `npm i @episclera/weaver`
+- Install: `npm i @episclera/weaver-utils`
 
-1. Then in your main layout file (\_app.tsx) you need to import preconfigured style files
-
-**NOTE**: TailwindCSS utils are also included in this file so no need to import something else.
+#### isBrowser
+Returns `true` if runing environement is a browser or `false` if not.
 
 ```js
-import '@episclera/weaver/styles/main.less'
-```
+import { isBrowser } from '@episclera/weaver-utils'
 
-2. Then in your main layout file (\_app.tsx) you need to wrapp the entire app in (COnfigProvider and DeviceDetectProvider)
-
-```jsx
-import { withMobileDetect, DeviceDetectProvider } from '@episclera/weaver'
-
-const App = ({ Component, pageProps, deviceContext }) => (
-  <ConfigProvider>
-    <DeviceDetectProvider deviceContext={deviceContext}>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    </DeviceDetectProvider>
-  </ConfigProvider>
-)
-
-App.getInitialProps = async appContext =>
-  await NextApp.getInitialProps(appContext)
-
-export default withMobileDetect(App)
+console.log(isBrowser())
 ```
 
 ## Contributing

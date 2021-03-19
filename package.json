@@ -1,6 +1,6 @@
 {
-  "name": "uikit",
-  "description": "🐜 UI library based on Ant-Design and TailwindCSS.",
+  "name": "weaver",
+  "description": "🐜 Enjoyable UI library.",
   "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
@@ -11,16 +11,16 @@
     "email": "episclera@episclera.com",
     "url": "https://episclera.com"
   },
-  "homepage": "https://episclera.github.io/uikit/",
+  "homepage": "https://episclera.github.io/weaver/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/episclera/uikit"
+    "url": "https://github.com/episclera/weaver"
   },
   "keywords": [
-    "uikit"
+    "weaver"
   ],
   "bugs": {
-    "url": "https://github.com/episclera/uikit/issues"
+    "url": "https://github.com/episclera/weaver/issues"
   },
   "scripts": {
     "build:packages": "lerna run build --stream",
