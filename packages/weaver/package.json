@@ -1,7 +1,7 @@
 {
   "name": "@episclera/weaver",
   "description": "🐜 Enjoyable UI library.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -52,8 +52,8 @@
     "webpack-cli": "4.5.0"
   },
   "dependencies": {
-    "@episclera/weaver-tailwind-config": "^1.2.1",
-    "@episclera/weaver-utils": "^1.2.1",
+    "@episclera/weaver-tailwind-config": "^1.2.2",
+    "@episclera/weaver-utils": "^1.2.2",
     "antd": "4.14.0",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.3"

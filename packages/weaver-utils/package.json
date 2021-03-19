@@ -1,7 +1,7 @@
 {
   "name": "@episclera/weaver-utils",
   "description": "A set of utils for weaver monorepo repository.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -53,7 +53,7 @@
     "webpack-cli": "4.5.0"
   },
   "dependencies": {
-    "@episclera/weaver-tailwind-config": "^1.2.1",
+    "@episclera/weaver-tailwind-config": "^1.2.2",
     "mobile-detect": "1.4.5",
     "opencollective-postinstall": "2.0.3"
   },
