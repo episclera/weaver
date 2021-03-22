@@ -54,7 +54,7 @@
   "dependencies": {
     "@episclera/weaver-tailwind-config": "^1.2.2",
     "@episclera/weaver-utils": "^1.2.2",
-    "antd": "4.14.0",
+    "antd": "4.14.1",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.0.3"
   },
