@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://episclera.github.io/weaver/">
   <img style="max-width:100%;" height="200"
-    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.svg">
+    src="https://raw.githubusercontent.com/episclera/weaver/master/logo.png">
   </a>
   <h1>
       weaver
@@ -24,8 +24,6 @@ Install: `npm i @episclera/weaver`
 
 1. Then in your main layout file (\_app.tsx) you need to import preconfigured style files
 
-**NOTE**: TailwindCSS utils are also included in this file so no need to import something else.
-
 ```js
 import '@episclera/weaver/styles/main.less'
 ```
@@ -44,9 +42,6 @@ const App = ({ Component, pageProps, deviceContext }) => (
     </DeviceDetectProvider>
   </ConfigProvider>
 )
-
-App.getInitialProps = async appContext =>
-  await NextApp.getInitialProps(appContext)
 
 export default withMobileDetect(App)
 ```

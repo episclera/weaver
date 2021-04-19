@@ -1,3 +1,35 @@
-@import (css) './tailwind.min.css';
 @import '~antd/dist/antd.less';
 @import './vars';
+
+// Ant fixes (Here we add fixes for ant-design components if we don't have special vars for that)
+// Arrows color fix
+.@{ant-prefix}-select-arrow,
+.@{ant-prefix}icon-calendar,
+.@{ant-prefix}icon-down {
+  color: @white;
+}
+// Card overflow fix
+.@{ant-prefix}-card {
+  overflow: hidden;
+}
+// Upload bg fix
+.@{ant-prefix}-form-item .@{ant-prefix}-upload.@{ant-prefix}-upload-drag {
+  background: @component-background;
+}
+
+// Icons centering fix
+.@{ant-prefix},
+.@{ant-prefix}-steps-item-icon,
+.@{ant-prefix}-pagination-item-link,
+.@{ant-prefix}-menu-submenu-title,
+.@{ant-prefix}-breadcrumb-link,
+.@{ant-prefix}-form-item-children-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.@{ant-prefix}-steps-item-icon,
+.@{ant-prefix}-pagination-item-link,
+.@{ant-prefix}-form-item-children-icon {
+  justify-content: center !important;
+}
