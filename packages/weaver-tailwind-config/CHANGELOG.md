@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.4.0 (2021-04-20)
+
+
+### Features
+
+* add tw as a dependencie ([a114db6](https://github.com/episclera/weaver/commit/a114db6348567dca7cead2e37ef78554d216408f))
+
+
+
+
+
 # 1.3.0 (2021-04-19)
 
 
