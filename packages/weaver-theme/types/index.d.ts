@@ -24,10 +24,17 @@ export interface WeaverThemePluginLess {
   ) => void
 }
 
+export interface WeaverThemeMain {
+  weaverThemeConfig: WeaverThemeConfig
+  weaverTheme: TWeaverTheme
+  weaverThemePluginLess: WeaverThemePluginLess
+}
+
 // package exports
 export const weaverThemeConfig: WeaverThemeConfig
 export const weaverTheme: TWeaverTheme
+export const weaverThemePluginLess: WeaverThemePluginLess
 // main pack
-declare const weaverThemePluginLess: WeaverThemePluginLess
+declare const weaverThemeMain: WeaverThemeMain
 
-export default weaverThemePluginLess
+export default weaverThemeMain
