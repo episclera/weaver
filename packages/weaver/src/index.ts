@@ -66,7 +66,6 @@ import {
   Upload,
   version,
 } from 'antd'
-import { weaverTheme } from '@episclera/weaver-theme'
 import {
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -143,8 +142,6 @@ const weaver: Weaver = {
   Typography,
   Upload,
   version,
-  // theme
-  weaverTheme,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
@@ -221,8 +218,6 @@ export {
   Typography,
   Upload,
   version,
-  // theme
-  weaverTheme,
   // mobile detect
   DeviceDetectProvider,
   DeviceDetectContext,
