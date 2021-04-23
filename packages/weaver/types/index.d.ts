@@ -66,7 +66,6 @@ import {
   Upload as AntdUpload,
   version as AntdVersion,
 } from 'antd'
-import { TWeaverTheme } from '@episclera/weaver-theme'
 import {
   DeviceDetectProviderProps,
   DeviceContext,
@@ -144,8 +143,6 @@ export interface Components {
 }
 
 export interface Weaver extends Components {
-  // theme
-  weaverTheme: TWeaverTheme
   // mobile detect
   DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
   DeviceDetectContext: React.Context<DeviceContext>
@@ -222,8 +219,6 @@ export const Tooltip: typeof AntdTooltip
 export const Typography: typeof AntdTypography
 export const Upload: typeof AntdUpload
 export const version: typeof AntdVersion
-// theme
-export const weaverTheme: TWeaverTheme
 // mobile detect
 export const DeviceDetectProvider: React.FC<DeviceDetectProviderProps>
 export const DeviceDetectContext: React.Context<DeviceContext>
