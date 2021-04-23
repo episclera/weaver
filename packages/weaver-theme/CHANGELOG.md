@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2021-04-23)
+
+
+### Features
+
+* add plugin weaver theme ([9a55392](https://github.com/episclera/weaver/commit/9a55392950720d0c204c17f995a3322c4ba1391f))
+
+
+
+
+
 ## 1.0.5 (2021-04-23)
 
 

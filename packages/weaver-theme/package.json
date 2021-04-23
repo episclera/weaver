@@ -1,7 +1,7 @@
 {
   "name": "@episclera/weaver-theme",
   "description": "A shareable weaver theme config and less plugin.",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
