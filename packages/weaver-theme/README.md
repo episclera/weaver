@@ -37,8 +37,16 @@ export default () => (
 
 ## With less
 
+Firstly you need to re-export it from `@episclera/weawer-theme` package.
+```js
+const { weaverThemePluginLess } = require('@episclera/theme-config)
+
+module.exports = weaverThemePluginLess
+```
+
+Then use it in your less file
 ```less
-@plugin '~@episclera/weaver-theme';
+@plugin 'weaverTheme';
 
 .my-class {
   background: weaverTheme('primary-color');
