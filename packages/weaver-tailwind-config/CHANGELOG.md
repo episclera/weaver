@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.1 (2021-04-24)
+
+
+### Bug Fixes
+
+* less vars exports ([f40563b](https://github.com/episclera/weaver/commit/f40563b9344823d3147e4351ca673c82887ee441))
+
+
+
+
+
 # 1.6.0 (2021-04-23)
 
 
