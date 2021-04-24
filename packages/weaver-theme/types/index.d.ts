@@ -4,8 +4,8 @@ export interface WeaverUnFlattenConfig {
 
 export interface WeaverThemeConfig {
   colors: WeaverUnFlattenConfig
-  shadow: WeaverUnFlattenConfig
-  'border-radius': WeaverUnFlattenConfig
+  boxShadow: WeaverUnFlattenConfig
+  borderRadius: WeaverUnFlattenConfig
   screens: WeaverUnFlattenConfig
 }
 

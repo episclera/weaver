@@ -2,7 +2,9 @@
 import { red, gold, green, blue } from '@ant-design/colors'
 import { WeaverThemeConfig } from '../types'
 
-// NOTE: vars names should be same as in ant-design default theme https://github.com/ant-design/ant-design/blob/0e4360038e79c7bd8bc7eb33dc56b7d0ccd481c4/components/style/themes/default.less
+/* NOTE-1: vars names should be same as in ant-design default theme https://github.com/ant-design/ant-design/blob/0e4360038e79c7bd8bc7eb33dc56b7d0ccd481c4/components/style/themes/default.less
+ * NOTE-2: Pay attention that every overwritten var here from antd design should be also included in weaver/styles and weaver/tailwind-config in the needed section
+ */
 /* istanbul ignore next */
 const weaverThemeConfig: WeaverThemeConfig = {
   colors: {
@@ -36,10 +38,10 @@ const weaverThemeConfig: WeaverThemeConfig = {
     //  -------- Outline colors ----------
     'outline-color': blue[6], // @primary-color
   },
-  shadow: {
+  boxShadow: {
     'box-shadow-base': '0 2px 8px rgba(0, 0, 0, 0.15)',
   },
-  'border-radius': {
+  borderRadius: {
     'border-radius-base': '0.5rem',
   },
   screens: {
