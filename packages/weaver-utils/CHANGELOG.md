@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.2 (2021-04-24)
+
+
+### Bug Fixes
+
+* icon exports ([f2193db](https://github.com/episclera/weaver/commit/f2193db23b8c9ebab0f15875816d8d4070ceee21))
+
+
+
+
+
 ## 1.6.1 (2021-04-24)
 
 
