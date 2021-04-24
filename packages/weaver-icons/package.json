@@ -1,7 +1,7 @@
 {
-  "name": "@episclera/weaver-utils",
-  "description": "A set of utils for weaver monorepo repository.",
-  "version": "1.6.0",
+  "name": "@episclera/weaver-icons",
+  "description": "A set of icons for weaver monorepo repository.",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -26,7 +26,7 @@
   },
   "keywords": [
     "weaver",
-    "utils"
+    "icons"
   ],
   "bugs": {
     "url": "https://github.com/episclera/weaver/issues"
@@ -52,8 +52,7 @@
     "webpack-cli": "4.6.0"
   },
   "dependencies": {
-    "@episclera/weaver-theme": "^1.1.0",
-    "mobile-detect": "1.4.5",
+    "@ant-design/icons": "4.6.2",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {

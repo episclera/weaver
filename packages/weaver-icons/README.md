@@ -3,10 +3,8 @@
   <img style="max-width:100%;" height="200"
     src="https://raw.githubusercontent.com/episclera/weaver/master/logo.svg">
   </a>
-  <h1>
-      weaver
-  </h1>
-  <p> 🐜 Enjoyable UI library. </p>
+  <h1>@episclera/weaver-icons</h1>
+  <p>A set of icons for @episclera/weaver package. Part of <a href="https://github.com/episclera/weaver">weaver</a> monorepo</p>
   <p>
     <a href="https://episclera.github.io/weaver/">Site</a>
     | <a href="https://episclera.github.io/weaver/docs/doc-introduction">Getting Started</a>
@@ -18,28 +16,19 @@
 [![GitHub](https://img.shields.io/github/license/episclera/weaver)](https://github.com/episclera/weaver/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-episclera%2Fmultipack-green)](https://github.com/episclera/multipack)
 
-## Usage
+## Getting started
 
-Install: `npm i @episclera/weaver`
-
-In your main layout file you need to import preconfigured style files and providers.
+- Install: `npm i @episclera/weaver-icons`
 
 ```jsx
-import { withMobileDetect, DeviceDetectProvider } from '@episclera/weaver'
-import '@episclera/weaver/styles/tailwind.css'
-import '@episclera/weaver/styles/main.less'
+import React from 'react'
+import { LoadingOutlined } from '@episclera/weaver-icons'
 
-const App = ({ Component, pageProps, deviceContext }) => (
-  <ConfigProvider>
-    <DeviceDetectProvider deviceContext={deviceContext}>
-      <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-    </DeviceDetectProvider>
-  </ConfigProvider>
+export default () => (
+  <div>
+    Loading... <LoadingOutlined />
+  </div>
 )
-
-export default withMobileDetect(App)
 ```
 
 ## Contributing
