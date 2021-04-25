@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@episclera/configkit-utils": "1.4.0",
-    "@episclera/webpack-config": "1.2.1",
+    "@episclera/webpack-config": "1.4.0",
     "@types/less": "3.0.2",
     "cross-env": "7.0.3",
     "less": "4.1.1",
