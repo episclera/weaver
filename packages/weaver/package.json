@@ -53,7 +53,7 @@
     "@episclera/weaver-theme": "^1.1.1",
     "@episclera/weaver-utils": "^1.6.1",
     "@episclera/weaver-icons": "^1.0.1",
-    "antd": "4.15.2",
+    "antd": "4.15.3",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.1.2"
   },
