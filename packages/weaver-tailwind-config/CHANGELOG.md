@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.8.0 (2021-04-29)
+
+
+### Features
+
+* add scheduled auto publish ([b77f555](https://github.com/episclera/weaver/commit/b77f555837c5c34e5cee32527ab4f5f4bb7f499b))
+
+
+
+
+
 # 1.7.0 (2021-04-28)
 
 
