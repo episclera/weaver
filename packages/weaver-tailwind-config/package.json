@@ -39,7 +39,7 @@
     "postinstall": "opencollective-postinstall || exit 0"
   },
   "devDependencies": {
-    "@episclera/multipack": "5.3.0",
+    "@episclera/multipack": "5.4.2",
     "cross-env": "7.0.3",
     "rimraf": "3.0.2",
     "webpack": "5.28.0",
