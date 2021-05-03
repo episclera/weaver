@@ -38,7 +38,7 @@
     "postinstall": "opencollective-postinstall || exit 0"
   },
   "devDependencies": {
-    "@episclera/multipack": "5.4.2",
+    "@episclera/multipack": "5.4.3",
     "@types/react": "17.0.4",
     "clean-css-cli": "4.3.0",
     "cross-env": "7.0.3",
