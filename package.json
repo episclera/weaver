@@ -35,21 +35,8 @@
     "lint:packages": "eslint ./packages --ext .ts,.tsx --max-warnings=0",
     "fix:packages": "eslint ./packages --ext .ts,.tsx --fix --max-warnings=0",
     "lint:packages:styles": "stylelint \"./packages/**/*.less\" --syntax=less",
-    "fix:packages:styles": "stylelint \"./packages/**/*.less\" --fix --syntax=less"
-  },
-  "lint-staged": {
-    "*.(ts|tsx)": [
-      "npm run lint:packages"
-    ],
-    "*.(less)": [
-      "npm run lint:packages:styles"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "fix:packages:styles": "stylelint \"./packages/**/*.less\" --fix --syntax=less",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
