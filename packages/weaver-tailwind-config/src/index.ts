@@ -20,11 +20,7 @@ const weaverTailwindConfig: WeaverTailwindConfig = {
     './utils/**/*.{ts,tsx}',
   ],
   theme: {
-    extend: {
-      colors,
-      boxShadow,
-      borderRadius,
-    },
+    extend: { colors, boxShadow, borderRadius },
     container: {
       center: true, // To center containers
     },
