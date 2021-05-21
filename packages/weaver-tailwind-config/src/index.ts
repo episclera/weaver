@@ -3,12 +3,8 @@
 import { weaverTheme, WeaverThemeConfig } from '@episclera/weaver-theme'
 import { WeaverTailwindConfig } from '../types'
 
-const {
-  colors,
-  screens,
-  boxShadow,
-  borderRadius,
-} = weaverTheme() as WeaverThemeConfig
+const { colors, screens, boxShadow, borderRadius } =
+  weaverTheme() as WeaverThemeConfig
 /* istanbul ignore next */
 const weaverTailwindConfig: WeaverTailwindConfig = {
   important: true, // add !important for all classes.This can be really useful when using Tailwind with existing CSS that has high specificity selectors.
