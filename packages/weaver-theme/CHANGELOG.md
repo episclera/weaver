@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.4.2 (2021-05-31)
+
+**Note:** Version bump only for package @episclera/weaver-theme
+
+
+
+
+
 ## 1.4.1 (2021-05-30)
 
 **Note:** Version bump only for package @episclera/weaver-theme
