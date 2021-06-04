@@ -8,6 +8,8 @@ const Row: TRow = ({ children, ...rest }: RowProps) => (
       { xs: 8, sm: 16, md: 24, lg: 32, xl: 32, xxl: 32 },
       { xs: 8, sm: 16, md: 24, lg: 32, xl: 32, xxl: 32 },
     ]}
+    align='top'
+    justify='center'
     data-testid='row'
     {...rest}
   >
