@@ -56,8 +56,8 @@
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {
-    "react": ">=16.13.1",
-    "react-dom": ">=16.13.1"
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }

@@ -27,6 +27,6 @@ describe('Container', () => {
       </Container>,
     )
 
-    expect(getByTestId('container-children')).not.toBeNull()
+    expect(getByTestId('container-children')).toBeTruthy()
   })
 })

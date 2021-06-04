@@ -43,6 +43,7 @@
     "@testing-library/react-hooks": "6.0.0",
     "@types/react": "17.0.9",
     "cross-env": "7.0.3",
+    "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rimraf": "3.0.2",
@@ -58,8 +59,9 @@
     "tailwindcss": "2.1.4"
   },
   "peerDependencies": {
-    "react": ">=16.13.1",
-    "react-dom": ">=16.13.1"
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "next": ">=10.0.0"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }

@@ -27,6 +27,6 @@ describe('Row', () => {
       </Row>,
     )
 
-    expect(getByTestId('row-children')).not.toBeNull()
+    expect(getByTestId('row-children')).toBeTruthy()
   })
 })

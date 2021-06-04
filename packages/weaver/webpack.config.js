@@ -9,4 +9,8 @@ module.exports = mergeConfigs(commonWebpackConfig, packageWebpackConfig, {
   output: {
     library: 'weaver',
   },
+  externals: {
+    // Don't bundle next/link
+    'next/link': 'next/link',
+  },
 })
