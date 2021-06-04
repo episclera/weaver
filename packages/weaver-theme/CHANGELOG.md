@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.6.0 (2021-06-04)
+
+
+### Features
+
+* add Link coponent ([979c973](https://github.com/episclera/weaver/commit/979c97310d9ff07bb1c7ff778bd0874776395f9a))
+
+
+
+
+
 # 1.5.0 (2021-06-04)
 
 

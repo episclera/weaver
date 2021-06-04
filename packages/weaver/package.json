@@ -1,7 +1,7 @@
 {
   "name": "@episclera/weaver",
   "description": "🐜 Enjoyable UI library.",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -51,17 +51,17 @@
     "webpack-cli": "4.7.0"
   },
   "dependencies": {
-    "@episclera/weaver-icons": "^1.4.0",
-    "@episclera/weaver-theme": "^1.5.0",
-    "@episclera/weaver-utils": "^1.10.0",
+    "@episclera/weaver-icons": "^1.5.0",
+    "@episclera/weaver-theme": "^1.6.0",
+    "@episclera/weaver-utils": "^1.11.0",
     "antd": "4.15.6",
     "opencollective-postinstall": "2.0.3",
     "tailwindcss": "2.1.4"
   },
   "peerDependencies": {
+    "next": ">=10.0.0",
     "react": ">=17.0.0",
-    "react-dom": ">=17.0.0",
-    "next": ">=10.0.0"
+    "react-dom": ">=17.0.0"
   },
   "gitHead": "8635a43c9abe3ab19ed07077384ebf40fbd7717c"
 }
