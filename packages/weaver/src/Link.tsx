@@ -14,7 +14,7 @@ const Link: TLink = ({ children, className, href, ...rest }: LinkProps) => {
 }
 
 Link.defaultProps = {
-  href: '',
+  href: '/',
   className: '',
 }
 

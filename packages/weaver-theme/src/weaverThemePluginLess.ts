@@ -1,5 +1,5 @@
-import { WeaverThemePluginLess, WeaverUnFlattenConfig } from '../types'
 import weaverTheme from './weaverTheme'
+import { WeaverThemePluginLess, WeaverUnFlattenConfig } from '../types'
 
 const weaverThemePluginLess: WeaverThemePluginLess = {
   install: (_less, _pluginManager, functions) => {

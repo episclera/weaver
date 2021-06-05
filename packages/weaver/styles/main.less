@@ -2,6 +2,12 @@
 @import './vars';
 
 // Ant fixes (Here we add fixes for ant-design components if we don't have special vars for that)
+
+// Row negative margins fix
+.@{ant-prefix}-row {
+  margin: 0px !important;
+}
+
 // Card overflow fix
 .@{ant-prefix}-card {
   overflow: hidden;

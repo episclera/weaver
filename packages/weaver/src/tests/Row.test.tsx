@@ -27,6 +27,8 @@ describe('Row', () => {
       </Row>,
     )
 
-    expect(getByTestId('row-children')).toBeTruthy()
+    expect(
+      getByTestId('row').querySelector('[data-testid="row-children"]'),
+    ).toBeTruthy()
   })
 })
