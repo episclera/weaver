@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.5.2 (2021-06-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency antd to v4.16.2 ([4158a09](https://github.com/episclera/weaver/commit/4158a09d1d83a7b30bb6c866e042ebe8f5e368e1))
+
+
+
+
+
 ## 1.5.1 (2021-06-05)
 
 
