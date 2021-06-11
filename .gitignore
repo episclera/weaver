@@ -89,6 +89,7 @@ yarn-error.log
 !**/.elasticbeanstalk/*.cfg.yml
 !**/.elasticbeanstalk/*.global.yml
 !**/.elasticbeanstalk/config.yml
+!**/.elasticbeanstalk/.ebextensions
 
 # ENV directories
 **/.env
