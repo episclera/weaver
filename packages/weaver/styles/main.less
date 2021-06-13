@@ -33,3 +33,34 @@
 .@{ant-prefix}-form-item-children-icon {
   justify-content: center !important;
 }
+
+// Pagination centering fix
+.@{ant-prefix}-pagination {
+  .@{ant-prefix}-pagination-prev,
+  .@{ant-prefix}-pagination-next,
+  .@{ant-prefix}-pagination-jump-prev,
+  .@{ant-prefix}-pagination-jump-next {
+    line-height: normal;
+  }
+
+  .@{ant-prefix}-pagination-jump-prev,
+  .@{ant-prefix}-pagination-jump-next {
+    vertical-align: initial;
+  }
+}
+
+// Button centering fix
+.@{ant-prefix}-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Image object fit and radius fix
+.@{ant-prefix}-image {
+  img {
+    // component base radius
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
