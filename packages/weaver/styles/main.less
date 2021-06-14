@@ -1,6 +1,8 @@
 @import '~antd/dist/antd.less';
 @import './vars';
 
+@plugin 'weaverTheme';
+
 // Ant fixes (Here we add fixes for ant-design components if we don't have special vars for that)
 
 // Row negative margins fix
@@ -59,8 +61,7 @@
 // Image object fit and radius fix
 .@{ant-prefix}-image {
   img {
-    // component base radius
-    border-radius: 8px;
+    border-radius: weaverTheme('border-radius-base');
     object-fit: cover;
   }
 }
