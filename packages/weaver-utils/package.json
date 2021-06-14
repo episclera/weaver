@@ -39,7 +39,7 @@
     "postinstall": "opencollective-postinstall || exit 0"
   },
   "devDependencies": {
-    "@episclera/multipack": "5.25.0",
+    "@episclera/multipack": "5.25.1",
     "@testing-library/react": "11.2.7",
     "@testing-library/react-hooks": "6.0.0",
     "@types/react": "17.0.11",
