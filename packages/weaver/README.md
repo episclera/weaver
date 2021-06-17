@@ -32,9 +32,7 @@ import '@episclera/weaver/styles/main.less'
 const App = ({ Component, pageProps, deviceContext }) => (
   <ConfigProvider>
     <DeviceDetectProvider deviceContext={deviceContext}>
-      <MainLayout>
         <Component {...pageProps} />
-      </MainLayout>
     </DeviceDetectProvider>
   </ConfigProvider>
 )
