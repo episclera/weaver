@@ -6,7 +6,17 @@ const Space: TSpace = ({
   children,
   ...rest
 }: PropsWithChildren<SpaceProps>) => (
-  <AntdSpace size='large' direction='vertical' data-testid='space' {...rest}>
+  <AntdSpace
+    size='large'
+    direction='vertical'
+    data-testid='space'
+    /**
+     * Adding width full because by default space doesn't respect parent width
+     * and sometimes it can overflow the parent
+     */
+    style={{ width: '100%' }}
+    {...rest}
+  >
     {children}
   </AntdSpace>
 )

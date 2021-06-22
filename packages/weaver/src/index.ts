@@ -6,6 +6,8 @@ import Container from './Container'
 import Link from './Link'
 import Row from './Row'
 import Space from './Space'
+import PageHeader from './PageHeader'
+import Spin from './Spin'
 
 const weaver = {
   ...AntdComponents,
@@ -16,6 +18,8 @@ const weaver = {
   Link,
   Row,
   Space,
+  PageHeader,
+  Spin,
 }
 
 export * from 'antd'
@@ -26,5 +30,7 @@ export { default as Container } from './Container'
 export { default as Link } from './Link'
 export { default as Row } from './Row'
 export { default as Space } from './Space'
+export { default as PageHeader } from './PageHeader'
+export { default as Spin } from './Spin'
 
 export default weaver

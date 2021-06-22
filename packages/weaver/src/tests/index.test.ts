@@ -8,6 +8,8 @@ import {
   Link,
   Row,
   Space,
+  PageHeader,
+  Spin,
 } from '../index'
 
 // NOTE: all utils/configs are tested separately in theirs folders so no need to test here other logical things
@@ -22,6 +24,8 @@ describe('Weaver', () => {
     Row,
     Link,
     Space,
+    PageHeader,
+    Spin,
   ])('Should correctly re-export package: %s', pkg => {
     expect(pkg).toBeTruthy()
   })

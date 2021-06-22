@@ -1,5 +1,5 @@
 import React from 'react'
-import { RowProps, SpaceProps } from 'antd'
+import { RowProps, SpaceProps, PageHeaderProps, SpinProps } from 'antd'
 import { LinkProps as NextLinkProps } from 'next/link'
 
 // Antd and Next overridden components
@@ -15,6 +15,10 @@ export type TRow = React.FC<RowProps>
 
 export type TSpace = React.FC<SpaceProps>
 
+export type TPageHeader = React.FC<PageHeaderProps>
+
+export type TSpin = React.FC<SpinProps>
+
 // export packages
 export * from 'antd'
 export * from '@episclera/weaver-icons'
@@ -24,3 +28,5 @@ export const Container: TContainer
 export const Link: TLink
 export const Row: TRow
 export const Space: TSpace
+export const PageHeader: TPageHeader
+export const Spin: TSpin

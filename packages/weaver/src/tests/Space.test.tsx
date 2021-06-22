@@ -27,6 +27,16 @@ describe('Space', () => {
     expect(getByTestId('space').classList).toContain('ant-space-vertical')
   })
 
+  it('Should render a space with width 100% in order to avoid bugs with parent overlap', () => {
+    const { getByTestId } = render(
+      <Space>
+        <div />
+      </Space>,
+    )
+
+    expect(getByTestId('space').style.width).toBe('100%')
+  })
+
   it('Should render by default each non last child with size large', () => {
     const { getByTestId } = render(
       <Space>
