@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.8.0 (2021-06-27)
+
+
+### Features
+
+* add upload ([945e821](https://github.com/episclera/weaver/commit/945e8219201d4cf05023aa016a5f2360144e9050))
+
+
+
+
+
 # 1.7.0 (2021-06-25)
 
 
