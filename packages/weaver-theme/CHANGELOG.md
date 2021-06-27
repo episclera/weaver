@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.10.0 (2021-06-27)
+
+
+### Features
+
+* add upload param type export ([4131418](https://github.com/episclera/weaver/commit/41314189a5577ce5edb857b548af55c1552d3912))
+
+
+
+
+
 # 1.9.0 (2021-06-27)
 
 
