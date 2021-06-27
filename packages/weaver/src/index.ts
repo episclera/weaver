@@ -9,6 +9,7 @@ import Space from './Space'
 import PageHeader from './PageHeader'
 import Spin from './Spin'
 import Markdown from './Markdown'
+import Upload from './Upload'
 
 const weaver = {
   ...AntdComponents,
@@ -22,6 +23,7 @@ const weaver = {
   PageHeader,
   Spin,
   Markdown,
+  Upload,
 }
 
 export * from 'antd'
@@ -35,5 +37,6 @@ export { default as Space } from './Space'
 export { default as PageHeader } from './PageHeader'
 export { default as Spin } from './Spin'
 export { default as Markdown } from './Markdown'
+export { default as Upload } from './Upload'
 
 export default weaver

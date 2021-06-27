@@ -1,8 +1,15 @@
 import React from 'react'
-import { RowProps, SpaceProps, PageHeaderProps, SpinProps } from 'antd'
+import {
+  RowProps,
+  SpaceProps,
+  PageHeaderProps,
+  SpinProps,
+  UploadProps,
+  Upload as AntdUpload,
+} from 'antd'
 import { TextAreaProps } from 'antd/lib/input'
 import { LinkProps as NextLinkProps } from 'next/link'
-import { ReactMarkdownOptions } from 'react-markdown'
+import { ReactMarkdownOptions, ReactNode } from 'react-markdown'
 
 // Antd and Next overridden components
 export type ContainerProps = React.HTMLAttributes<HTMLDivElement>
@@ -30,6 +37,25 @@ export interface MarkdownWrapper {
   Editor: TMarkdownEditor
 }
 
+export interface UploadDraggerProps extends UploadProps {
+  /**
+   * Used to override default icon in dragger box
+   */
+  icon?: ReactNode
+}
+
+export type TUploadDragger = React.FC<UploadDraggerProps>
+
+export interface UploadWrapper {
+  Dragger: TUploadDragger
+  /**
+   * Just a re-export under a different name for Upload component
+   * needed because antd uses Classes for top level components but we want to avoid
+   * that in this repo because is a useless approach
+   */
+  Input: typeof AntdUpload
+}
+
 // export packages
 export * from 'antd'
 export * from '@episclera/weaver-icons'
@@ -42,3 +68,4 @@ export const Space: TSpace
 export const PageHeader: TPageHeader
 export const Spin: TSpin
 export const Markdown: MarkdownWrapper
+export const Upload: UploadWrapper
