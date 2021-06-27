@@ -8,6 +8,7 @@ import {
   Upload as AntdUpload,
 } from 'antd'
 import { TextAreaProps } from 'antd/lib/input'
+import { UploadChangeParam } from 'antd/lib/upload'
 import { LinkProps as NextLinkProps } from 'next/link'
 import { ReactMarkdownOptions, ReactNode } from 'react-markdown'
 
@@ -55,6 +56,14 @@ export interface UploadWrapper {
    */
   Input: typeof AntdUpload
 }
+
+/**
+ * Dragger onChange event param export
+ * Exporting here because by default it is not exported from antd but is useful
+ * and can be used in many situations when we need to do some manipulations with upload fileList array
+ * or to take from there some info
+ */
+export type UploadChangeEventParam = UploadChangeParam
 
 // export packages
 export * from 'antd'
