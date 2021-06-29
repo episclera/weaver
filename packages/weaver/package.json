@@ -54,7 +54,7 @@
     "@episclera/weaver-icons": "^1.9.0",
     "@episclera/weaver-theme": "^1.10.0",
     "@episclera/weaver-utils": "^1.15.0",
-    "antd": "4.16.2",
+    "antd": "4.16.6",
     "opencollective-postinstall": "2.0.3",
     "react-markdown": "6.0.2",
     "tailwindcss": "2.2.4"
