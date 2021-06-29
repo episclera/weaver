@@ -25,6 +25,7 @@
 .@{ant-prefix}-pagination-item-link,
 .@{ant-prefix}-menu-submenu-title,
 .@{ant-prefix}-breadcrumb-link,
+.@{ant-prefix}-image-mask-info,
 .@{ant-prefix}-form-item-children-icon {
   display: inline-flex !important;
   align-items: center !important;
@@ -63,5 +64,14 @@
   img {
     border-radius: weaverTheme('border-radius-base');
     object-fit: cover;
+  }
+}
+
+// Image preview centering fix
+.@{ant-prefix}-image-preview-root {
+  .@{ant-prefix}-image-preview-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
