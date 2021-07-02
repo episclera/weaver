@@ -24,7 +24,9 @@ describe('Link', () => {
   })
 
   it('Should pass className to anchor element', () => {
-    const { getByTestId } = render(<Link href='/' className='test-class' />)
+    const { getByTestId } = render(
+      <Link href='/' typographyLinkProps={{ className: 'test-class' }} />,
+    )
 
     expect((getByTestId('link') as HTMLAnchorElement).classList).toContain(
       'test-class',

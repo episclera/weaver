@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import {
   RowProps,
   SpaceProps,
@@ -7,6 +7,7 @@ import {
   UploadProps,
   Upload as AntdUpload,
 } from 'antd'
+import { LinkProps as AntdLinkProps } from 'antd/lib/typography/Link'
 import { TextAreaProps } from 'antd/lib/input'
 import { UploadChangeParam } from 'antd/lib/upload'
 import { LinkProps as NextLinkProps } from 'next/link'
@@ -17,9 +18,14 @@ export type ContainerProps = React.HTMLAttributes<HTMLDivElement>
 export type TContainer = React.FC<ContainerProps>
 
 export interface LinkProps
-  extends React.HTMLAttributes<HTMLAnchorElement>,
-    NextLinkProps {}
+  extends NextLinkProps,
+    PropsWithChildren<{
+      typographyLinkProps?: AntdLinkProps
+    }> {}
+
 export type TLink = React.FC<LinkProps>
+
+export type RowGutters = RowProps['gutter']
 
 export type TRow = React.FC<RowProps>
 
@@ -73,6 +79,7 @@ export * from '@episclera/weaver-theme'
 export const Container: TContainer
 export const Link: TLink
 export const Row: TRow
+export const rowGutters: RowGutters
 export const Space: TSpace
 export const PageHeader: TPageHeader
 export const Spin: TSpin

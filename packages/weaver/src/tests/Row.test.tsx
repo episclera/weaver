@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Row from '../Row'
+import Row, { rowGutters } from '../Row'
 
 beforeAll(() => {
   // Note: using mock matchMedia because row uses this functionality for responsive stuff
@@ -30,5 +30,9 @@ describe('Row', () => {
     expect(
       getByTestId('row').querySelector('[data-testid="row-children"]'),
     ).toBeTruthy()
+  })
+
+  it('Should export row gutters because they can be useful also for library users', () => {
+    expect(rowGutters).toBeTruthy()
   })
 })

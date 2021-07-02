@@ -6,10 +6,14 @@ import { TLink, LinkProps } from '../types'
 /**
  * Link component created using next/link as router and antd-link as DOM styled element
  */
-const Link: TLink = ({ children, className, href, ...rest }: LinkProps) => {
+const Link: TLink = ({
+  children,
+  typographyLinkProps = {},
+  ...rest
+}: LinkProps) => {
   return (
-    <NextLink href={href} passHref {...rest}>
-      <Typography.Link className={className} data-testid='link'>
+    <NextLink passHref {...rest}>
+      <Typography.Link data-testid='link' {...typographyLinkProps}>
         {children}
       </Typography.Link>
     </NextLink>
