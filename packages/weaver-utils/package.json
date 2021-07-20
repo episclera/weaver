@@ -52,7 +52,6 @@
   },
   "dependencies": {
     "@episclera/weaver-theme": "^1.13.3",
-    "mobile-detect": "1.4.5",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {

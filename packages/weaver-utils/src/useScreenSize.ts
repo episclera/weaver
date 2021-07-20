@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { useEffect, useState, useCallback, useContext, useMemo } from 'react'
+import { useEffect, useState, useCallback, useMemo } from 'react'
 import { weaverTheme } from '@episclera/weaver-theme'
-import isBrowser from '../isBrowser'
-import { DeviceDetectContext } from './DeviceDetectProvider'
-import { TUseScreenSize } from '../../types'
+import isBrowser from './isBrowser'
+import { TUseScreenSize } from '../types'
 
 const useScreenSize: TUseScreenSize = () => {
-  const { isMobile, isTablet } = useContext(DeviceDetectContext)
-
   const themeScreenSizes = useMemo(
     () => ({
       xs: Number(`${weaverTheme('screen-xs')}`.replace(/\D/g, '')),
@@ -20,18 +17,13 @@ const useScreenSize: TUseScreenSize = () => {
     [],
   )
 
-  /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
-  const guessedSizeFromDeviceContext = useMemo(() => {
-    if (isMobile) return themeScreenSizes.xs
-    if (isTablet) return themeScreenSizes.md
-
-    return themeScreenSizes.lg
-  }, [isMobile, isTablet, themeScreenSizes])
-
-  /* istanbul ignore next (because we need a Request from browser to node env to fully test it) */
+  /**
+   * Fallback to XS screen sizes if window is not defined
+   */
+  /* istanbul ignore next */
   const getScreenSize = useCallback(
-    () => (isBrowser ? window.innerWidth : guessedSizeFromDeviceContext),
-    [guessedSizeFromDeviceContext],
+    () => (isBrowser ? window.innerWidth : themeScreenSizes.xs),
+    [themeScreenSizes],
   )
 
   const [screenSize, setScreenSize] = useState(getScreenSize())

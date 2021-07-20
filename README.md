@@ -25,15 +25,13 @@ Install: `npm i @episclera/weaver`
 In your main layout file you need to import preconfigured style files and providers.
 
 ```jsx
-import { withMobileDetect, DeviceDetectProvider } from '@episclera/weaver'
+import { ConfigProvider } from '@episclera/weaver'
 import '@episclera/weaver/styles/tailwind.css'
 import '@episclera/weaver/styles/main.less'
 
-const App = ({ Component, pageProps, deviceContext }) => (
+const App = ({ Component, pageProps }) => (
   <ConfigProvider>
-    <DeviceDetectProvider deviceContext={deviceContext}>
-        <Component {...pageProps} />
-    </DeviceDetectProvider>
+    <Component {...pageProps} />
   </ConfigProvider>
 )
 

@@ -1,21 +1,7 @@
 import React from 'react'
 import { render, act } from '@testing-library/react'
 import { weaverTheme } from '@episclera/weaver-theme'
-import DeviceDetectProvider from '../DeviceDetectProvider'
 import useScreenSize from '../useScreenSize'
-import { DeviceContext } from '../../../types'
-
-let mocKProps = {}
-
-beforeEach(() => {
-  mocKProps = {
-    deviceContext: {
-      isMobile: false,
-      isTablet: false,
-      isDesktop: false,
-    },
-  }
-})
 
 describe('useScreenSize', () => {
   it('should re-calculate screen size on every window resize and return correct guessed screen size', () => {
@@ -40,18 +26,12 @@ describe('useScreenSize', () => {
       isXxlAndGreaterScreenSize: false,
     }
     const Component: React.FC = () => {
-      const screenSizeContext = useScreenSize()
-      guessedScreenSizes = screenSizeContext
+      const screenSizePayload = useScreenSize()
+      guessedScreenSizes = screenSizePayload
       return <div />
     }
 
-    render(
-      <DeviceDetectProvider
-        {...(mocKProps as { deviceContext: DeviceContext })}
-      >
-        <Component />
-      </DeviceDetectProvider>,
-    )
+    render(<Component />)
 
     act(() => {
       // set size to extra small mobile one
@@ -186,13 +166,7 @@ describe('useScreenSize', () => {
       return <div />
     }
 
-    render(
-      <DeviceDetectProvider
-        {...(mocKProps as { deviceContext: DeviceContext })}
-      >
-        <Component />
-      </DeviceDetectProvider>,
-    )
+    render(<Component />)
 
     expect(isGuessedScreenSizeXs).toBeTruthy()
   })
