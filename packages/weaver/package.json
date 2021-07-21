@@ -59,7 +59,7 @@
     "antd": "4.16.8",
     "opencollective-postinstall": "2.0.3",
     "react-markdown": "6.0.2",
-    "tailwindcss": "2.2.5"
+    "tailwindcss": "2.2.6"
   },
   "peerDependencies": {
     "dayjs": ">= 1.10.5",
