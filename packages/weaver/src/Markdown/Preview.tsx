@@ -28,13 +28,19 @@ const MarkdownPreview: TMarkdownPreview = ({
       'li',
     ]}
     components={{
-      p: Typography.Paragraph,
-      strong: props => <Typography.Text strong {...props} />,
-      em: props => <Typography.Text italic {...props} />,
-      a: props => <Typography.Link target='_blank' {...props} />,
-      blockquote: props => <Typography.Text italic {...props} />,
-      ol: props => <Typography.Text {...props} />,
-      ul: props => <Typography.Text {...props} />,
+      p: (props: Record<string, any>) => <Typography.Paragraph {...props} />,
+      strong: (props: Record<string, any>) => (
+        <Typography.Text strong {...props} />
+      ),
+      em: (props: Record<string, any>) => <Typography.Text italic {...props} />,
+      a: (props: Record<string, any>) => (
+        <Typography.Link target='_blank' {...props} />
+      ),
+      blockquote: (props: Record<string, any>) => (
+        <Typography.Text italic {...props} />
+      ),
+      ol: (props: Record<string, any>) => <Typography.Text {...props} />,
+      ul: (props: Record<string, any>) => <Typography.Text {...props} />,
     }}
     /**
      * This props is needed for security considerations to not allow users to inject
