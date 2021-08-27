@@ -51,7 +51,7 @@
     "webpack-cli": "4.8.0"
   },
   "dependencies": {
-    "@ant-design/icons": "4.6.3",
+    "@ant-design/icons": "4.6.4",
     "opencollective-postinstall": "2.0.3"
   },
   "peerDependencies": {
