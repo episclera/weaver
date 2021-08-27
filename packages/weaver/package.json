@@ -58,7 +58,7 @@
     "@episclera/weaver-utils": "^1.19.0",
     "antd": "4.16.13",
     "opencollective-postinstall": "2.0.3",
-    "react-markdown": "6.0.3",
+    "react-markdown": "7.0.1",
     "tailwindcss": "2.2.8"
   },
   "peerDependencies": {
